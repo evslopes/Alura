@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+    <script type="text/javascript">
+        var pulaLinha = function () {
+            document.write("<br><hr><br>");
+        };
+		
+        var mostra = function(frase) {
+            document.write(frase);
+            pulaLinha;
+        };
+        
+		var calculoIMC = function(altura, peso) {
+				var imc = peso / (altura * altura);
+				return imc;
+		};
+		
+		var peso = 70;
+		var altura = 1.70;
+		var meuIMC = calculoIMC(altura, peso);
+		document.write("Você está a " + (35 - meuIMC) + " da obsidade");
+		
+		
+		
+    </script>

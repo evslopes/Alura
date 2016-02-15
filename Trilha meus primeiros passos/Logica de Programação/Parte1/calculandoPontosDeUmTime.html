@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+	<script type="text/javascript"> 
+		
+		var pulaLinha = function() {
+			docment.write("<br><hr><br>");
+		};
+		
+		
+		var mostra = function(frase) {
+			document.write(frase);
+			pulaLinha;	
+		};
+		
+		
+		var vitorias = parseInt(prompt("Quantos jogos o CDC Futebol Clube venceu?"));
+		var empates = parseInt(prompt("Quantos jogos o CDC Futebol Clube empatou?"));
+		var pontos = (vitorias * 3) + empates;
+		
+		mostra("Nosso time tem " + pontos + " pontos!");
+		
+	</script>

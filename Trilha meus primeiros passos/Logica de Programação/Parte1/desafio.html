@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+var pulaLinha = function() {
+    document.write("<br><hr><br>");
+}
+
+var mostra = function(frase) {
+    document.write(frase);
+    pulaLinha();
+};
+
+var quantidadeAcertos = function(jogados, sorteados) {
+    var acertos = 0;
+    for(i = 0; i < 6; i++) {
+        for(j = 0; j < 6; j++) {
+            if(jogados[i] === sorteados[j]) {
+                acertos++;
+            }
+        }
+    }
+    return acertos;
+}
+
+alert("Jogue na mega-sena! Diga quais são os 6 números do seu jogo.");
+var numerosJogados = [];
+for(i = 0; i < 6; i++) {
+    numerosJogados[i] = parseInt(prompt("Diga qual o " + (i + 1) + " número do seu jogo:"));
+}
+
+alert("Muito bom! Agora vou sortear os números premiados. Clique em ok para eu fazer o sorteio.");
+var numerosSorteados = [];
+for(i = 0; i < 6; i++) {
+    numerosSorteados[i] = Math.round( Math.random() * 60 );
+}
+
+var acertos = quantidadeAcertos(numerosJogados, numerosSorteados);
+
+mostra("Você jogou os números " + numerosJogados);
+mostra("Os números sorteados foram " + numerosSorteados);
+mostra("Você acertou " + acertos + " número(s)");
+
+</script>
