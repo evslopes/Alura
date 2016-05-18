@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Cap1"/>
+	<classpathentry kind="src" path="Cap2"/>
+	<classpathentry kind="src" path="Cap3"/>
+	<classpathentry kind="src" path="Cap4"/>
+	<classpathentry kind="src" path="Cap5"/>
+	<classpathentry kind="src" path="Cap6"/>
+	<classpathentry kind="src" path="Cap7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
